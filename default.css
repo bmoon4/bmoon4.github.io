@@ -67,8 +67,16 @@ body {
   #firstScreen{
       background-image: url(image/bgPic.jpg);
       background-size: cover;
-      background-repeat: no-repeat;
-    
+      background-repeat: no-repeat; 
+  }
+
+  #black{
+    color: black;
+    font-size: 4em;
+  }
+  #white{
+    color: white;
+    font-size: 4em;
   }
   .intro{
       font-size: 30px;
