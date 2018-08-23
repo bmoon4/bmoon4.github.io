@@ -1,19 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
+
 body {
     color: white;
     background-color: #f4f4f4;
     transition: background-color 1s ease;
   }
 
-  
   /* panel styles */
   .panel {
     /* min height incase content is higher than window height */
     min-height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     font-family: 'Merriweather',sans-serif;
     /* outline: 10px solid hotpink; */
     /* turn above on to see the edge of panels */
@@ -44,8 +40,7 @@ body {
   
   /* styling for demo, can ignore */
   body {
-    text-align: center;
-    font-size: 120%;
+    font-size: 115%;
     line-height: 1.618;
   }
   h1, h2 {
@@ -56,37 +51,156 @@ body {
   h3{
       font-size:1.8em;
   }
-  p {
-    max-width: 30em;
-    margin-bottom: 1.618em;
-  }
+
   a {
     color: #4332CF;
+    font-size: 110%;
+    text-decoration-line: none;
+  }
+
+  a:hover{
+      color:red;
   }
   
+  a:visited{
+      columns:#4332CF;
+  }
+
   #firstScreen{
       background-image: url(image/bgPic.jpg);
       background-size: cover;
       background-repeat: no-repeat; 
+      text-align: center;
+      padding-top:20%;
+      padding-left:5%;
+      padding-right:5%;
+      box-sizing: border-box;
   }
-
+  .grayEffect{
+    background-color: rgba(60, 60, 60, 0.5);
+  }
+ 
   #black{
     color: black;
-    font-size: 4em;
   }
   #white{
     color: white;
-    font-size: 4em;
-  }
-  .intro{
-      font-size: 30px;
-  }
 
+  }
+  .center {
+    text-align: center;
+    padding:8%;
+    box-sizing: border-box;
+  }
+  .keyTitle{
+    width:50%;
+    float:left;
+    text-align: center;
+  }
   .contents{
-     font-size:20px;
-     text-align: left;
+      width:50%;
+      float:right;
   }
 
-  ul {
-    list-style: none;
+  .main-container{
+    min-height: 100vh;
+    margin-left: 5%;
+    margin-right:5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
+
+.skill-container{
+    float:left;
+    margin: auto;
+}
+  .keyTitle-skill{
+    width:100%;
+    float:none;
+    text-align: center;
+  }
+  .contents-skill{
+    min-width: 50%;  
+    float: left;
+    box-sizing: border-box;
+  }
+
+  .contact{
+      font-size:140%;
+  }
+
+  footer{
+     text-align: center;
+     background: gray;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+
+  @media(max-width:700px){
+    body {
+        font-size: 100%;
+        line-height: 1.618;
+      }
+    #firstScreen{
+        background-image: url(image/bgPic.jpg);
+        background-size: cover;
+        background-repeat: no-repeat; 
+        text-align: center;
+        padding-top:200px;
+        padding-left:5%;
+        padding-right:5%;
+        box-sizing: border-box;
+    }
+    .center {
+        text-align: center;
+        padding-bottom:40%;
+        padding-left:10%;
+        padding-right:10%;
+        box-sizing: border-box;
+      }
+      h1, h2 {
+        font-size: 2em;
+        letter-spacing: -0.05em;
+        line-height: 1.1;
+      }
+      h3{
+          font-size:1.5em;
+      }
+      .center {
+        text-align: center;
+        padding-top:70%;
+        box-sizing: border-box;
+      }
+      .keyTitle{
+        width:100%;
+        float:none;
+        margin: auto;
+        text-align: left;
+        padding:5px;
+      }
+      .contents{
+          width:100%;
+          float:none;  
+          margin: auto;
+          padding:5px;
+      }
+      .main-container{
+        display: block;
+      }
+      .skill-container{
+        float:none;
+        margin: auto;
+    }
+      
+ 
+      .contact{
+        font-size:110%;
+    }
+    footer{
+        text-align: center;
+        background: gray;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 0.8em;
+     }
+}
