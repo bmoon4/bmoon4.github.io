@@ -192,6 +192,11 @@ body {
         float:none;
         margin: auto;
     }
+    .padding-top-added{
+      height:200px;
+      margin-top:70%;
+      margin-bottom:20%;
+    }
     .contact{
         font-size:110%;
     }
