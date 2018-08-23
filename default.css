@@ -129,7 +129,9 @@ body {
   .contact{
       font-size:140%;
   }
-
+  #git{
+    color: maroon;
+  }
   footer{
      text-align: center;
      background: gray;
