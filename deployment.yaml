@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata: 
+  name: static-html-image
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: static-html-image
+  template:
+    metadata:
+      labels:
+        app: static-html-image
+    spec:
+      containers:
+      - env:
+        image: gcr.io/annular-fold-285623/static-html-image:v1
+        imagePullPolicy: Always
+        name: static-html-image
+        ports:
+        - containerPort: 8080
+    
