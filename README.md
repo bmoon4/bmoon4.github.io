@@ -1,5 +1,6 @@
-# Google Cloud Platform Kubernetes
-This is my first GKE project. 
+# Kubernetes practice on GKE
+This is my first GKE project.
+URL: moondevops.com 
 
 ## Components 
 The GKE cluster consists one loadbalancer and three pods. 
