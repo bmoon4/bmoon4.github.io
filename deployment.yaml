@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - env:
-        image: gcr.io/annular-fold-285623/static-html-image:v1
+        image: gcr.io/annular-fold-285623/static-html-image:v2
         imagePullPolicy: Always
         name: static-html-image
         ports:
